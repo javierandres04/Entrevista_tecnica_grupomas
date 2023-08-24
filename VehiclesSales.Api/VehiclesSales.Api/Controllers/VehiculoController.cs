@@ -1,4 +1,5 @@
 using AutoMapper;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using VehiclesSales.Core.DTOs;
 using VehiclesSales.Core.Entidades;
@@ -20,6 +21,7 @@ namespace VehiclesSales.Api.Controllers
         }
 
         [HttpGet]
+        [EnableCors("AllowAllOrigins")]
         [Route("Obtener")]
         public async Task<IActionResult> Get()
         {

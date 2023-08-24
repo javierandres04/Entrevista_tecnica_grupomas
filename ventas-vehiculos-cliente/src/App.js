@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import { BrowserRouter } from "react-router-dom";
 import Layout from "./Componentes/Layout";
+import Vehiculos from "./Pages/Vehiculos";
 
 
 const App = () => {
@@ -8,7 +9,7 @@ const App = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />} >
-          <Route path="/Vehiculos" element={<Layout />} />
+          <Route path="/Vehiculos" element={<Vehiculos />} />
         </Route>
       </Routes>
     </BrowserRouter>

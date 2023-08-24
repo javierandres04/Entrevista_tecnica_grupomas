@@ -10,7 +10,7 @@ const Layout = () => {
 
       <Sidebar />
 
-      <Container fluid className="bg-primary">
+      <Container fluid className="">
         <Outlet />
       </Container>
 
